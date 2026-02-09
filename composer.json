@@ -1,0 +1,38 @@
+{
+    "name": "marcodes/statamic-google-reviews",
+    "autoload": {
+        "psr-4": {
+            "MARCODES\\StatamicGoogleReviews\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MARCODES\\StatamicGoogleReviews\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "statamic/cms": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Google Reviews",
+            "description": "Statamic Google Reviews addon"
+        },
+        "laravel": {
+            "providers": [
+                "MARCODES\\StatamicGoogleReviews\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "prefer-stable": true
+}
